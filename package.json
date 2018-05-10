@@ -1,13 +1,13 @@
 {
-  "name": "riot-web",
-  "productName": "Riot",
+  "name": "Live-talk",
+  "productName": "Livetalk",
   "main": "electron_app/src/electron-main.js",
   "version": "0.14.1",
-  "description": "A feature-rich client for Matrix.org",
-  "author": "New Vector Ltd.",
+  "description": "A Interactive Desktop App",
+  "author": "Livetutor.Pvt Ltd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vector-im/riot-web"
+    "url": "https://github.com/"
   },
   "license": "Apache-2.0",
   "files": [
@@ -103,7 +103,7 @@
     "cpx": "^1.3.2",
     "cross-env": "^4.0.0",
     "css-raw-loader": "^0.1.1",
-    "electron-builder": "^11.2.4",
+    "electron-builder": "^11.7.0",
     "electron-builder-squirrel-windows": "^11.2.1",
     "electron-devtools-installer": "^2.2.0",
     "emojione": "^2.2.7",
@@ -151,7 +151,7 @@
     "olm": "https://matrix.org/packages/npm/olm/olm-2.2.1.tgz"
   },
   "build": {
-    "appId": "im.riot.app",
+    "appId": "im.livetalk.app",
     "category": "Network",
     "electronVersion": "1.8.3",
     "//asar=false": "https://github.com/electron-userland/electron-builder/issues/675",
@@ -163,15 +163,12 @@
       "src/**",
       "img/**"
     ],
-    "extraResources": [
-      "webapp/**/*"
-    ],
     "linux": {
       "target": "deb",
       "category": "Network;InstantMessaging;Chat",
-      "maintainer": "support@riot.im",
+      "maintainer": "",
       "desktop": {
-        "StartupWMClass": "riot"
+        "StartupWMClass": "Live-talk"
       }
     },
     "win": {

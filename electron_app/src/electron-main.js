@@ -195,7 +195,8 @@ electron.app.on('ready', () => {
         width: mainWindowState.width,
         height: mainWindowState.height,
     });
-    mainWindow.loadURL(`file://${__dirname}/../../webapp/index.html`);
+    //mainWindow.loadURL(`file://${__dirname}/../../webapp/index.html`);
+	mainWindow.loadURL(`http://192.168.1.27/index1.html`);
     electron.Menu.setApplicationMenu(vectorMenu);
 
     // explicitly hide because setApplicationMenu on Linux otherwise shows...
@@ -205,7 +206,7 @@ electron.app.on('ready', () => {
     // Create trayIcon icon
     tray.create({
         icon_path: iconPath,
-        brand: vectorConfig.brand || 'Riot',
+        brand: vectorConfig.brand || 'live-Talk',
     });
 
     if (!argv.hidden) {
@@ -262,4 +263,4 @@ electron.app.on('before-quit', () => {
 // installer uses for the shortcut icon.
 // This makes notifications work on windows 8.1 (and is
 // a noop on other platforms).
-electron.app.setAppUserModelId('com.squirrel.riot-web.Riot');
+electron.app.setAppUserModelId('com.squirrel.livetalk');

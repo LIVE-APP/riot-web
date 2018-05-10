@@ -1,9 +1,9 @@
 {
-  "name": "riot-web",
-  "productName": "Riot",
+  "name": "Livetalk",
+  "productName": "livetalk",
   "main": "src/electron-main.js",
   "version": "0.14.1",
-  "description": "A feature-rich client for Matrix.org",
+  "description": "A desktop app for livetalk",
   "author": "Vector Creations Ltd.",
   "dependencies": {
     "auto-launch": "^5.0.1",
